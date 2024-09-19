@@ -1,0 +1,581 @@
+/* Global Styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+/* Button Styles */
+.btn {
+  background-color: #28a745; /* Green background color */
+  color: white; /* White text color */
+  padding: 12px 24px; /* Adjust padding for button size */
+  font-size: 18px; /* Slightly larger font size */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.btn:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly increase button size on hover */
+}
+
+.btn:focus {
+  outline: none; /* Remove default focus outline */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+}
+
+/* Navbar Styles */
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* Space between left and right navbars */
+  align-items: center; /* Center items vertically */
+  padding: 10px;
+  background-color: #f8f9fa; /* Background color for navbars */
+}
+
+/* Styles for the left navbar */
+.left-navbar {
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.left-navbar ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.left-navbar li {
+  margin-right: 20px; /* Spacing between list items */
+}
+
+.navbar-logo {
+  width: 150px; /* Adjust width to make the image smaller */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* styles for Everything component*/
+
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  margin-left: 20px; /* adjust the margin to position the search bar below the navbar */
+}
+
+.search-input {
+  font-size: 15px;
+  padding: 10px;
+  border: 0.2px solid #ccc;
+  border-radius: 0px;
+  margin-left: -10px;
+  width: 200px; /* increased width to 300px */
+}
+
+.search-btn {
+  background-color: #48814b;
+  border:#ddd;
+  height: 38px;
+  border-radius: 20%;
+  padding: 6px;
+  cursor: pointer;
+  margin-left: 10px; /* added margin to create space between arrow and search bar */
+}
+
+.search-btn span {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+
+/* Styles for the right navbar */
+.right-navbar {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  margin-left: auto; /* Push the right navbar to the far right */
+}
+
+.right-navbar ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.right-navbar li {
+  margin-left: 20px; /* Default spacing between list items */
+}
+
+.right-navbar li.about-link {
+  margin-left: 600px; /* Add a larger gap between Juice and About */
+  margin-top: -35px;
+}
+
+.right-navbar li.contact-link{
+margin-top: -35px;
+}
+
+.right-navbar li.img-link {
+  margin-top: -35px;
+}
+
+.right-navbar li.img2-link{
+  margin-top: -35px;
+
+}
+
+/* Right Navbar Specific Styles */
+.right-navbar .icon {
+  font-size: 20px; /* Adjust size of icons */
+}
+
+/* Dark color for icons */
+.dark-icon {
+  color: #333; /* Dark gray color for the icons */
+}
+
+a {
+  text-decoration: none;
+  color: #333; /* Text color for links */
+  font-weight: 400; /* Normal font weight */
+  font-size: 16px; /* Slightly smaller font size */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Main Content Area */
+main {
+  flex: 1;
+  padding: 20px; /* Adds padding to the main content */
+  padding-top: 70px; /* Increase padding-top to move content lower */
+  box-sizing: border-box;
+}
+
+/* Main Content Area */
+main {
+  flex: 1;
+  padding: 20px; /* Adds padding to the main content */
+  padding-top: 70px; /* Increase padding-top to move content lower */
+  box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero-content {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.hero-image {
+  width: 100%; /* Adjust width as needed */
+  max-width: 600px; /* Limit the maximum width of the image */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Space between image and text */
+}
+
+.hero-text {
+  flex: 1; /* Ensure text takes up remaining space */
+  margin-left: 6%;
+}
+
+.hero-text .leaf-logo {
+  width: 150px; /* Match the size of the navbar logo */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure it behaves as a block-level element */
+  margin: 0 auto 10px; /* Center the logo and add space below */
+  margin-left: 0; /* Remove left margin if not needed */
+}
+
+.hero-text h1 {
+  font-size: 20px; /* Make the main heading a bit smaller */
+  font-weight: 600; /* Thinner font weight */
+  margin: 0; /* Reset margin */
+  font-family: 'Pacifico', cursive; /* Elegant calligraphy font for the main heading */
+}
+
+.hero-text .main-text {
+  font-size: 50px; /* Increase font size for the main text */
+  font-weight: 900; /* Thinner font weight */
+  margin: 10px 0; /* Add margin */
+  font-family: 'Pacifico', cursive; /* Elegant calligraphy font for the main text */
+}
+
+.hero-text .lorem-text {
+  font-size: 16px; /* Adjust font size for the Lorem Ipsum text */
+  margin-top: 20px; /* Add margin at the top */
+}
+
+/* Info Strip Section */
+.info-strip {
+  display: flex; /* Arrange boxes in a row */
+  background-color: #000; /* Black background */
+  padding: 20px 0; /* Add padding inside the strip */
+  margin-bottom: 20px; /* Space below the strip */
+  width: 95vw; /* Make the strip fill the entire viewport width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  justify-content: space-between; /* Adjust the spacing between boxes */
+}
+
+.info-box {
+  flex: 1; /* Make boxes flexible */
+  color: #fff; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 10px; /* Increase padding to make boxes larger */
+  /* Remove the border to eliminate the white outline */
+  border: none;
+  margin: 0 5px; /* Space between boxes */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+  font-size: 18px; /* Increase font size for better readability */
+}
+
+.info-box:nth-child(1),
+.info-box:nth-child(2),
+.info-box:nth-child(3),
+.info-box:nth-child(4) {
+  background-color: #333; /* Darker background for differentiation */
+}
+
+/* Featured Products Section */
+.featured-products {
+  margin-bottom: 20px; /* Space below the section */
+  text-align: center; /* Center-align all text within this section */
+}
+
+.featured-products h2 {
+  margin-bottom: 20px; /* Space below the heading */
+  font-size: 24px; /* Adjust font size if needed */
+  font-weight: bold; /* Make the heading bold for emphasis */
+}
+
+/* Featured Image Styling */
+.featured-image {
+  max-width: 7%; /* Ensure the image fits within the container */
+  height: auto; /* Maintain aspect ratio */
+  margin: 20px 0; /* Space around the image */
+  border-radius: 8px; /* Optional: add rounded corners */
+}
+
+/* Container for Product Boxes */
+.products {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping to the next line */
+  justify-content: center; /* Center align the product boxes */
+  gap: 20px; /* Space between boxes */
+}
+
+/* Individual Product Box */
+.product-box {
+  width: 250px; /* Set a fixed width for each box */
+  padding: 10px; /* Padding inside each box */
+  border-radius: 8px; /* Rounded corners */
+  background-color: transparent;
+  box-shadow: none;
+  text-align: center; /* Center align text inside the box */
+}
+
+/* Product Image */
+.product-image {
+  width: 100%; /* Make the image fill the width of the box */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Space below the image */
+}
+
+/* Product Name */
+.product-name {
+  font-size: 18px; /* Font size for the name */
+  margin: 10px 0; /* Margin above and below the name */
+}
+
+/* Product Price */
+.product-price {
+  font-size: 16px; /* Font size for the price */
+  color: #333; /* Dark color for the price */
+  margin-top: 5px; /* Space above the price */
+}
+
+.mid-logo{
+  margin-left: 40%;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+
+.box {
+  position: relative;
+  display: inline-block;
+  width: 30%;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff; /* Add this line to set the background color */
+  border: 1px solid #ddd; /* Add this line to set a border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  border-radius: 10px; 
+}
+
+.box-image {
+  border-radius: 10px;
+  width: 80%;
+  margin-top:0%;
+}
+
+.box-text {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+
+.shop-now-btn {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.shop-now-btn:hover {
+  background-color: #3e8e41;
+}
+
+
+/* Shop Now Button */
+.trending-products .shop-now-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* About Us Section */
+
+.about-us {
+  margin-bottom: 20px; /* Space below the section */
+}
+
+.about-us h1{
+  color: #fff;
+  display: flex; /* Arrange boxes in a row */
+  background-color: #000; /* Black background */
+  font-weight: 700;
+  padding: 20px ; /* Add padding inside the strip */
+  margin-bottom: 20px; /* Space below the strip */
+  justify-content: space-between; /* Adjust the spacing between boxes */
+}
+
+.about-us h2{
+  background-color: #ddd;
+  text-align: center;
+  font-size: 30px;
+  margin-top: -20px;
+}
+
+.about-us h3{
+  text-align: center ;
+  font-size: xx-large;
+  margin-top: 10%;
+}
+
+.trending-logo{
+  margin-top: -20px;
+  margin-left: 45%;
+}
+/* Trending Products Container */
+.trending-products {
+  display: flex; /* Display trending products as flex items */
+  flex-wrap: wrap; /* Allow trending products to wrap to the next line */
+  justify-content: center; /* Center align the trending products */
+  gap: 10px; /* Add space between trending products */
+}
+
+.trending-product-box {
+  flex: 1; /* Make each trending product box take equal space */
+  max-width: 15%; /* Set a maximum width for each trending product box */
+}
+
+/* Trending Product Image */
+.trending-products .box-image {
+  width: 100%; /* Make the image fill the width of the box */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Space below the image */
+}
+
+/* Trending Product Name */
+.trending-products .box-text h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Trending Product Price */
+.trending-products .box-text p {
+  font-size: 16px;
+  color: #333;
+  margin-top: 5px;
+}
+
+.trending-products .shop-now-btn:hover {
+  background-color: #28a745;
+}
+
+.reviews h1 {
+  text-align: center ;
+  font-size: xx-large;
+  margin-top: 10%;
+}
+
+.review-box {
+  display: flex; /* Display the review boxes side by side */
+  justify-content: center; /* Center align the review boxes */
+  gap: 20px; /* Add space between the review boxes */
+  block-size: 400px;
+  margin-top: 50px;
+}
+
+.review-box > div {
+  width: 250px; /* Set a fixed width for each review box */
+  padding: 20px; /* Add padding to each review box */
+  border: 1px solid #ddd; /* Add a border to each review box */
+  border-radius: 7px; /* Add rounded corners to each review box */
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to each review box */
+}
+
+.review-box .stars {
+  font-size: 18px; /* Font size for the stars */
+  color: #ffd700; /* Golden color for the stars */
+  margin-bottom: 10px; /* Space below the stars */
+  margin-left: 80px;
+}
+
+.review-box .stars::before {
+  content: "\2605\2605\2605\2605\2605"; /* 5 golden stars */
+}
+
+.review-box p {
+  font-size: 16px; /* Font size for the review text */
+  margin-bottom: 20px; /* Space below the review text */
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.review-box img {
+  width: 20%; /* Make the image fill the width of the review box */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 100px;
+  border-radius: 10px; /* Add rounded corners to the image */
+}
+
+.mid-review{
+  background-image: url('https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/sydney-rae-668606-unsplash.jpg');
+  background-size: cover;
+  flex: 0.6;
+  background-position: center;
+  height: 400px; /* adjust the height to your liking */
+  
+  margin-top: -40px;
+  background-blend-mode: multiply;
+  color: #ffffff; /* add text color to contrast with the background image */
+}
+
+.mid-review h1{
+  font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-size: 36px;
+}
+
+.mid-review button{
+  background-color: #47a14a;
+  justify-content: center;
+  margin-left: 90px;
+  transition-duration: 0.4s;
+  margin-top: 100px;
+  font-size: 30px;
+}
+
+.mid-review button:hover {
+  background-color: #04AA6D; /* Green */
+  color: white;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+}
+
+.footer-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.footer-image {
+  width: 40%;
+  height: 40%;
+  margin-bottom: 10px;
+  margin-left: -100px;
+}
+
+.lorem-text {
+  font-size: 0.9em;
+  color: #000000;
+  text-align:left;
+}
+
+.footer-content {
+  font-size: 1em;
+}
+
+
+.footer-headings-top h1 {
+margin-left: 170%;
+margin-top:-50% ;
+}
+
+.footer-headings-top h2 {
+  margin-left: 300%;
+  margin-top:-40% ;
+}
+
+.footer-headings-bottom h1 {
+  margin-left: 170%;
+  margin-top: 40%;
+}
+
+.footer-headings-bottom h2 {
+  margin-left: 300% ;
+  margin-top: 0;
+}
